@@ -34,7 +34,9 @@ Start QGIS. The QGIS user interface may open in a local language different langu
 
 ![](img/exercise_1/image1.png)
 
-In order for the language change to take effect you have to restart QGIS. Add the first vector dataset by clicking **Open Data Source Manager**: The same tool can be found in the Layer- menu **Add layer -\> Add Vector Layer** (Ctrl+Shift+V). A new window should open. Choose the **Vector- tab** on the left. Add a dataset from the data directory (**..course_directory/geofabrik/**). Choose the **berlin_roads.shp** file. Finally, click the **Add** button and close the window. ![](img/exercise_1/image2.png) The dataset should show up as follows (the color might be different): ![](img/exercise_1/image3.png)
+In order for the language change to take effect you have to restart QGIS. Add the first vector dataset by clicking **Open Data Source Manager**: The same tool can be found in the Layer- menu **Add layer -\> Add Vector Layer** (Ctrl+Shift+V). A new window should open. Choose the **Vector- tab** on the left. Add a dataset from the data directory (**..course_directory/geofabrik/**). Choose the **berlin_roads.shp** file. Finally, click the **Add** button and close the window. ![](img/exercise_1/image2.png) The dataset should show up as follows (the color might be different):
+
+![](img/exercise_1/image3.png)
 
 The QGIS user interface
 
@@ -44,7 +46,7 @@ As the name suggests, **Toolbars** include sets of different tools. Your QGIS mi
 
 #### **2. Map View**
 
-The **Map View** displays the geographic data sets that are set visible in the **Layers Panel**. You can zoom in and out and pan the map with you mouse (Also try the scroll wheel on your mouse, use CTRL + scroll for more subtle zooming) 
+The **Map View** displays the geographic data sets that are set visible in the **Layers Panel**. You can zoom in and out and pan the map with you mouse (Also try the scroll wheel on your mouse, use CTRL + scroll for more subtle zooming).
 
 #### **3. Browser Panel**
 
@@ -60,11 +62,13 @@ With the **Search** functionality you can easily find different tools and functi
 
 #### **6. Status Bar**
 
-In the **Status Bar** you can find the **coordinates** of your mouse cursor (either in meters or in latitude and longitude), the **scale**, the **magnifier**, the **rotation**, the **coordinate reference system** and QGIS's log **messages**. The status bar is handy for example when you need to quickly change the coordinate reference system of the project .
+In the **Status Bar** you can find the **coordinates** of your mouse cursor (either in meters or in latitude and longitude), the **scale**, the **magnifier**, the **rotation**, the **coordinate reference system** and QGIS's log **messages**. The status bar is handy for example when you need to quickly change the coordinate reference system of the project.
 
 ## Try the tools yourself
 
-Try at least the following tools in the **Map Navigation Toolbar** and in the **Attributes Toolbar**: ![](img/exercise_1/image4.png)
+Try at least the following tools in the **Map Navigation Toolbar** and in the **Attributes Toolbar**: 
+
+![](img/exercise_1/image4.png)
 
 Locate these tools from the aforementioned toolbars and recognize their functions:
 
