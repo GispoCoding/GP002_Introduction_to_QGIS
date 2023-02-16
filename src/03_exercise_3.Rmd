@@ -19,7 +19,7 @@ Open a new QGIS project (Project \> New) and save it as "QGIS-exercise 3". Add t
 
 ## Visualizing vector data
 
-Take a look at all the vector data sets that are currently open in your project. You will notice that on the left side of each layer there is a shape that describes its vector type. **berlin_placenames** is a **point** data set, **berlin_roads** is a **line** data set and **berlin_water** is a **polygon** data set. 
+Take a look at all the vector data sets that are currently open in your project. You will notice that on the left side of each layer there is a shape that describes its vector type. **berlin_placenames** is a **point** data set, **berlin_roads** is a **line** data set and **berlin_water** is a **polygon** data set.
 
 ![](img/exercise_3/image1.png)
 
@@ -47,7 +47,7 @@ Your point and line data sets together could look something like this, for examp
 
 ## Visualizing polygon data sets
 
-Let's move on to polygons. Set the **berlin_water** layer visible together with the **berlin_roads** and **berlin_placenames** layers and hide all other layers. Open the symbology tab of the **berlin_water** layer and note the differences to the properties of the previous point and line data sets. Experiment with **colors** and selecta different **symbol** for the layer. Feel free to try different **opacity** values as well.Once you have tinkered enough, press **OK**.
+Let's move on to polygons. Set the **berlin_water** layer visible together with the **berlin_roads** and **berlin_placenames** layers and hide all other layers. Open the symbology tab of the **berlin_water** layer and note the differences to the properties of the previous point and line data sets. Experiment with **colors** and selecta different **symbol** for the layer. Feel free to try different **opacity** values as well. Once you have tinkered enough, press **OK**.
 
 ![](img/exercise_3/image6.png)
 
