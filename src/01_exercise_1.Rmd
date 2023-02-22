@@ -20,7 +20,7 @@ On the main page you'll find a link where you can download QGIS. Download the la
 
 ## Downloading course materials
 
-Datasets used during the course can be downloaded from Google Drive following this link: 
+Datasets used during the course can be downloaded from Google Drive following this link:
 
 ::: note-box
 [course_directory !LINK NOT UP TO DATE!.zip](https://google.com)
@@ -32,7 +32,7 @@ Open the link above and click **Download**. The data directory is compressed as 
 
 Start QGIS. The QGIS user interface may open in a local language different language from English. You can change the language from **Settings → Options → General**, Click **Override System Locale** → **User Interface Translation → American English**. Finally press **OK**.
 
-![](img/exercise_1/image1.png)
+![](img/exercise_1/image1.png){width="693"}
 
 In order for the language change to take effect you have to restart QGIS. Add the first vector dataset by clicking **Open Data Source Manager**: The same tool can be found in the Layer- menu **Add layer -\> Add Vector Layer** (Ctrl+Shift+V). A new window should open. Choose the **Vector- tab** on the left. Add a dataset from the data directory (**..course_directory/geofabrik/**). Choose the **berlin_roads.shp** file. Finally, click the **Add** button and close the window. ![](img/exercise_1/image2.png) The dataset should show up as follows (the color might be different):
 
@@ -66,23 +66,23 @@ In the **Status Bar** you can find the **coordinates** of your mouse cursor (eit
 
 ## Try the tools yourself
 
-Try at least the following tools in the **Map Navigation Toolbar** and in the **Attributes Toolbar**: 
+Try at least the following tools in the **Map Navigation Toolbar** and in the **Attributes Toolbar**:
 
 ![](img/exercise_1/image4.png)
 
 Locate these tools from the aforementioned toolbars and recognize their functions:
 
-+--------------------------------+---------------------------------------------+
-| ##### **Zoom Full**            | ![](img/exercise_1/image5.png)              |
-+--------------------------------+---------------------------------------------+
-| ##### **Zoom to Layer**        | ![](img/exercise_1/image6.png)              |
-+--------------------------------+---------------------------------------------+
-| ##### **Identify Features**    | ![](img/exercise_1/image7.png){width="36"}  |
-+--------------------------------+---------------------------------------------+
-| ##### **Open Attribute Table** | ![](img/exercise_1/image8.png){width="42"}  |
-+--------------------------------+---------------------------------------------+
-| ##### **Measure Line Length**  | ![](img/exercise_1/image9.png)              |
-+--------------------------------+---------------------------------------------+
++--------------------------------+--------------------------------------------+
+| ##### **Zoom Full**            | ![](img/exercise_1/image5.png)             |
++--------------------------------+--------------------------------------------+
+| ##### **Zoom to Layer**        | ![](img/exercise_1/image6.png)             |
++--------------------------------+--------------------------------------------+
+| ##### **Identify Features**    | ![](img/exercise_1/image7.png){width="36"} |
++--------------------------------+--------------------------------------------+
+| ##### **Open Attribute Table** | ![](img/exercise_1/image8.png){width="42"} |
++--------------------------------+--------------------------------------------+
+| ##### **Measure Line Length**  | ![](img/exercise_1/image9.png)             |
++--------------------------------+--------------------------------------------+
 
 \
 Also try the functionalities of the **Status Bar** and the **Layers Panel**.
