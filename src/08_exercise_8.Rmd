@@ -24,7 +24,7 @@ You can add plugins to QGIS from the top menu bar by selecting **Plugins \> Mana
 
 ![](img/exercise_8/image1.png)
 
-Click **Install Plugin** and then **Close**. A new menu under **Web** (in the top bar) has appeared. Select **Web \> QuickMapServices \> OSM \> OSM Standard**. OpenStreetMap is now visible in your project. Arrange your layers so that the population data is clearly visible. Try other background maps too.
+Click **Install Plugin** and then **Close**. A new menu under **Web** (in the top bar) has appeared. Select **Web \> QuickMapServices \> OSM \> OSM Standard**. OpenStreetMap is now visible in your project. Arrange your layers so that the population data is clearly visible. Try other background maps too. 
 
 ![](img/exercise_8/image2.png)
 
@@ -40,7 +40,7 @@ You can preview the 3d model in the exporter window and, if you'd like, export i
 
 ## Qgis2web
 
-The **Qgis2web** pluginis an easy to use plugin for creating web maps using the **Leaflet** and **OpenLayers** libraries. Qgis2web is a useful tool for learning these libraries and producing content for publishing on the web. Open Qgis2web from **Web \> Qgis2web \> Create web map**. Under the **Popup fields** section, choose the **Inline label** option for the fields of the population layer and press **Update preview**. Once the map has updated, click on the population grid. If no popup is visible, try switching to **Leaflet** (from the bottom of the window) and updating the preview. 
+The **Qgis2web** plugin is an easy to use plugin for creating web maps using the **Leaflet** and **OpenLayers** libraries. Qgis2web is a useful tool for learning these libraries and producing content for publishing on the web. Open Qgis2web from **Web \> Qgis2web \> Create web map**. Under the **Popup fields** section, choose the **Inline label** option for the fields of the population layer and press **Update preview**. Once the map has updated, click on the population grid. If no popup is visible, try switching to **Leaflet** (from the bottom of the window) and updating the preview. 
 
 ![](img/exercise_8/image5.png)
 

@@ -1,6 +1,5 @@
 *.zip
 .idea
-docs
 out
 src/_book
 .vscode/launch.json
