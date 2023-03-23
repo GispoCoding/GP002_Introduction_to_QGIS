@@ -49,13 +49,13 @@ There might be a slight delay while the data is downloaded from the server. You 
 You can now add more WMS resources. Feel free to experiment with the below examples of international WMS resources:
 
 -   **Bathymetry and topography data by GEBCO**:\
-    <https://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv> 
+    <https://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv>
 
 -   **OpenStreetMap as a WMS by Terrestris\
     **<http://ows.terrestris.de/osm-gray/service>
 
 -   **Drought frequency change in europe by European Environment Agency**:\
-    <https://climate.discomap.eea.europa.eu/arcgis/services/ClimateChange/Drought_Frequency_change/MapServer/WmsServer> 
+    <https://climate.discomap.eea.europa.eu/arcgis/services/ClimateChange/Drought_Frequency_change/MapServer/WmsServer>
 
 -   **High resolution satellite imagery of europe by European Environment Agency (the image layer might take a while to load and display due to size):\
     <https://image.discomap.eea.europa.eu/arcgis/services/GioLand/Core01Cov2_2012/MapServer/WmsServer>**
