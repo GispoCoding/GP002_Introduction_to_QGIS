@@ -27,7 +27,7 @@ On the main page you'll find a link where you can download QGIS. Download the la
 Datasets used during the course can be downloaded from Google Drive following this link:
 
 ::: note-box
-[course_directory !LINK NOT UP TO DATE!.zip](https://google.com)
+[course_directory.zip](https://drive.google.com/file/d/1IAdDFktqd7_KoNBAITfyY9WztCME9Ckm/view?usp=share_link)
 :::
 
 Open the link above and click **Download**. The data directory is compressed as a .zip- file **course_directory.zip**. Extract the data directory a suitable location on your computer. The directory should be easily found during the exercises. In the following exercises a reference to **../course_directory/** means the file path chosen by you. Ask for instructions if needed.
