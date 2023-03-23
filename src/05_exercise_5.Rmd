@@ -1,4 +1,4 @@
-# Exercise 7: Print layout
+# Exercise 5: Print layout
 
 ## Exercise content
 
