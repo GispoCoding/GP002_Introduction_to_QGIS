@@ -10,9 +10,8 @@ You know how to produce a print layout. You also know how to export print layout
 
 ## Preparations
 
-Open a new QGIS project (**Project \> New**) and save it as **"QGIS-exercise 7"**. Add the following data to the project:
+Open the previous QGIS project with visualized New York population data and add the following datasets to your project.
 
--   **..course_directory/kontur/population_ny.gpkg**
 
 -   **..course_directory/ny_gov/ny_districts.gpkg**
 
@@ -21,8 +20,7 @@ Open a new QGIS project (**Project \> New**) and save it as **"QGIS-exercise 7"*
 ![](img/exercise_5/image1.png)
 
 ## Print layout
-
-The focus of our map will be the **population_ny** data set. Hide all other layers for now and visualize the data as you like. You can, for example, produce a thematic map based on the **population** field in the data. Check out exercise 6 if you need a refresher on the population data or on how thematic maps are created. You can also customize the visual style of the **OpenStreetMap** background map if you want to. Your map could look something like this now:
+ You can also customize the visual style of the **OpenStreetMap** background map if you want to. Your map could look something like this now:
 
 ![](img/exercise_5/image2.png){width="500"}
 

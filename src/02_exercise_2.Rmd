@@ -28,11 +28,11 @@ A window for defining and using WMS resources opens. Your QGIS might already hav
 Psst! Give online data resources informative name, for example based on the data provider. You could name this WMS as NASA, as we will be connecting to a WMS that hosts their earth observation data.
 :::
 
-Copy the address of the WMS ([https://neo.gsfc.nasa.gov/wms/wms)](https://neo.gsfc.nasa.gov/wms/wms)) to the URL field. Some data resources might require a sign in to the service, but when the data is open credentials are rarely needed. For this WMS you can leave **No Authentication** selected.
+Copy the address of the WMS ([https://neo.gsfc.nasa.gov/wms/wms?version=1.1.0)](https://neo.gsfc.nasa.gov/wms/wms?version=1.1.0) to the URL field. Some data resources might require a sign in to the service, but when the data is open credentials are rarely needed. For this WMS you can leave **No Authentication** selected.
 
 ![](img/exercise_2/image2.png)
 
-Once you have set theconnection details, press **OK**. In the **Data Source Manager** press **Connect**. QGIS will now connect to the online data resource, and after a short wait a list of the available data appears. Notice that the list has subcategories. In the future QGIS will remember saved connections.
+Once you have set the connection details, press **OK**. In the **Data Source Manager** press **Connect**. QGIS will now connect to the online data resource, and after a short wait a list of the available data appears. Notice that the list has subcategories. In the future QGIS will remember saved connections.
 
 ![](img/exercise_2/image3.png)
 

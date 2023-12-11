@@ -12,15 +12,13 @@ After this exercise you can create labels for different datasets and classify da
 
 Open a new QGIS project (Project \> New) and save it as "QGIS-exercise 4". Add the following data to the project:
 
--   **..course_directory/harvard_map_collection/berlin_1920.tif**
-
 -   **..course_directory/geofabrik/berlin_placenames.shp**
 
 -   **..course_directory/geofabrik/berlin_roads.shp**
 
 -   **..course_directory/geofabrik/berlin_water.shp**
 
--   **..course_directory/kontur/population_crete.gpkg**
+-   **..course_directory/kontur/population_ny.gpkg**
 
 -   **..course_directory/copernicus/DEM_greece.tif**
 
@@ -78,21 +76,25 @@ Now the labels follow the road lines. You can further customize the curving of t
 
 ## Classifying vector data
 
-Let\'s first focus on the **population_crete** data set, so hide all other layers. The **population_crete** data set haspopulation data aggregated to a hexagonal grid in **GeoPackage** format. Take a look at the attribute table of the data (**Right-click** the layer in the **Layers Panel** andselect **Open Attribute Table**). QGIS opens an attribute table window that showcases the attributes of the layer features. The attribute table is an essential part of any vector data set and all vector data sets have one.
+Let's first focus on the **population_ny** data set, so hide all other layers. The **population_ny** data set has population data aggregated to a hexagonal grid in **GeoPackage** format. If the hexagons in your map look a little askew, change the project coordinate system to EPSG:3857 by clicking ![](img/exercise_4/image23.png) at the bottom right corner. In the **Filter** bar search for **3857** (WGS85 / Pseudo-Mercator). Click on the correct coordinate system and click **OK** from the bottom of the window. QGIS might ask for transformation for other layers open, select the most accurate and click **OK**.
+
+![](img/exercise_4/image24.png){width="70%"}
+
+Take a look at the attribute table of the data (**Right-click** the layer in the **Layers Panel** andselect **Open Attribute Table**). QGIS opens an attribute table window that showcases the attributes of the layer features. The attribute table is an essential part of any vector data set and all vector data sets have one.
 
 ![](img/exercise_4/image6.png)
 
-Taking a look at the attribute table is necessary to understand the data. Another important resource is the **metadata** of the data set. Metadatais often found on the data provider\'s web pages or on other interfaces meant for discovering geographic data sets. Metadata usually tells us for example who the data producer is, for what purpose the data is, in what scale the data is, and what the native coordinate reference system of the data is.
+Taking a look at the attribute table is necessary to understand the data. Another important resource is the **metadata** of the data set. Metadata is often found on the data provider's web pages or on other interfaces meant for discovering geographic data sets. Metadata usually tells us for example who the data producer is, for what purpose the data is, in what scale the data is, and what the native coordinate reference system of the data is.
 
-The **population_crete** data set is actually only a small portion of a global population dataset produced by Kontur. You can find the metadata of the data here: <https://data.humdata.org/dataset/kontur-population-dataset>. Open the link, select the metadata tab and see how the data set has been made (read the methodology section).
+The **population_ny** data set is actually only a small portion of a global population dataset produced by Kontur. You can find the metadata of the data here: <https://data.humdata.org/dataset/kontur-population-dataset>. Open the link, select the metadata tab and see how the data set has been made (read the methodology section).
 
 With the metadata we now know that the population values in the data are based on multiple data sources, and, while proven to be accurate, they still are only estimations. We also know that the estimation is from the year 2020. All this is important information to know. It is also common that the field names in an attribute table are not self-explanatory (abbreviations or codes) and thus the contents of the fields could be hard to understand with the attribute table alone. Metadata helps in this regard too as most data sets with multiple field names have the field names explained in the metadata.
 
-It is vital to understand your data before you start working with it. Now that we do, we can for example decide that we want to produce a thematic map that showcases the population distribution of the island of Crete. With a thematic map the data is much clearer to interpret and we can more easily choose appropriate settings for the visualization. Let\'s start the process of creating a thematic map by opening the **Layer Properties** and setting the layer\'s **Symbology** to **Graduated**. In the **Value** drop-down menu, select which field you want to base your classification on (**population** in this case). Also set the **Color ramp**, **Mode** andthe number of **Classes** as shown below:
+It is vital to understand your data before you start working with it. Now that we do, we can for example decide that we want to produce a thematic map that showcases the population distribution of New York. With a thematic map the data is much clearer to interpret and we can more easily choose appropriate settings for the visualization. Let's start the process of creating a thematic map by opening the **Layer Properties** and setting the layer's **Symbology** to **Graduated**. In the **Value** drop-down menu, select which field you want to base your classification on (**population** in this case). Also set the **Color ramp**, **Mode** andthe number of **Classes** as shown below:
 
 ![](img/exercise_4/image7.png)
 
-Press **Classify** once you have set the aforementioned settings. Now the classes show up in the classes section. You can manually edit the value breaks of the classes by double-clicking the contents of the **Values** column or the class names by double-clicking the contents of the **Legend** column. The legend names of the classes are visible in the **Layers Panel** and in the legendof a print layout. Press **Apply** to see the changes on the map. A thematic map should appear in the map view:
+Press **Classify** once you have set the aforementioned settings. Now the classes show up in the classes section. You can manually edit the value breaks of the classes by double-clicking the contents of the **Values** column or the class names by double-clicking the contents of the **Legend** column. The legend names of the classes are visible in the **Layers Panel** and in the legend of a print layout. Press **Apply** to see the changes on the map. A thematic map should appear in the map view:
 
 ![](img/exercise_4/image8.png)
 
@@ -106,7 +108,7 @@ We can also customize the symbol style. Open the **Properties** of the layer and
 
 ![](img/exercise_4/image11.png)
 
-The **Symbol Settings** window opens. Select the **Simple fill** symbol layerand either set the **Stroke color** to transparent or **Stroke style** to **No pen**. Press **OK** and **OK**. Zoom around the map to see the results and return to the symbology settings if you want to make more changes.
+The **Symbol Settings** window opens. Select the **Simple fill** symbol layerand either set the **Stroke color** to transparent or **Stroke style** to **No line**. Press **OK** and **OK**. Zoom around the map to see the results and return to the symbology settings if you want to make more changes.
 
 ![](img/exercise_4/image12.png)
 
@@ -114,9 +116,10 @@ The **Symbol Settings** window opens. Select the **Simple fill** symbol layerand
 **Psst! Always save your project file at the end of the exercise.**
 :::
 
+
 ## Bonus: Classifying raster data
 
-Set the **DEM_greece** raster visible and hide all other layers. **DEM_greece** is a part of a europe-wide digital elevation model (DEM) and it is produced by Copernicus (more info: <https://land.copernicus.eu/imagery-in-situ/eu-dem>). As the name suggests, this particular data set covers mostly Greece. If the data opens up in an unknown coordinate reference system (CRS), set the layer\'s CRS to **EPSG:3035**. Remember to also check that the project CRS is EPSG:3035. By default the elevation model will look like this:
+Set the **DEM_greece** raster visible and hide all other layers. **DEM_greece** is a part of a europe-wide digital elevation model (DEM) and it is produced by Copernicus (more info: <https://land.copernicus.eu/imagery-in-situ/eu-dem>). As the name suggests, this particular data set covers mostly Greece. If the data opens up in an unknown coordinate reference system (CRS), set the layer's CRS to **EPSG:3035**. Remember to also check that the project CRS is EPSG:3035. By default the elevation model will look like this:
 
 ![](img/exercise_4/image13.png)
 
@@ -124,13 +127,13 @@ Notice that QGIS detected that the data contains continuous values and visualize
 
 ![](img/exercise_4/image14.png)
 
-Open the layer\'s **Symbology** settings and notice that the menu looks different from the symbology settings of a vector layer. Try switching the singleband grey to **Singleband pseudocolor**. You can also experiment with the hillshade effect.
+Open the layer's **Symbology** settings and notice that the menu looks different from the symbology settings of a vector layer. Try switching the singleband grey to **Singleband pseudocolor**. You can also experiment with the hillshade effect.
 
 ![](img/exercise_4/image15.png)
 
 Now zoom into the archipelago that was earlier indicated by the red rectangle. Notice that while you definitely can see the islands, it would be quite hard to confidently tell which one of them is the highest or what kind of relief they have, for example.
 
-Let\'s reclassify the data in a way that we get a more detailed view of the islands specifically. Set the scale to 1:500 000 (In the bottom bar of QGIS) and center the map onto the islands in the red rectangle. In the **Symbology** settings, open the **Min/Max Value Settings** and edit the settings so that the visualization uses the **Min/Max values** and **Statistics Extent** is set to **Current canvas**. See the example settings below:
+Let's reclassify the data in a way that we get a more detailed view of the islands specifically. Set the scale to 1:500 000 (In the bottom bar of QGIS) and center the map onto the islands in the red rectangle. In the **Symbology** settings, open the **Min/Max Value Settings** and edit the settings so that the visualization uses the **Min/Max values** and **Statistics Extent** is set to **Current canvas**. See the example settings below:
 
 ![](img/exercise_4/image16.png)
 
@@ -140,7 +143,8 @@ Then press **Apply**, **classify** the values again and finally press **OK**.
 
 On the left picture the archipelago is visualized with just pseudocolours and no reclassification. On the right the same area is visualized after being reclassified so that only the elevation values within the current map view are taken into account. You can also test different classification modes and zoom levels to see how they affect the view. For example, try viewing the entire data with the **Quantile** mode - it shows the relief and especially the shorelines even more distinctively.
 
-Once you are done, save the project file into the course directory either by selecting **Project \> Save** from the menu bar or by pressing **CTRL + S**.
+
+
 
 ## Bonus: Label rendering
 
@@ -150,30 +154,4 @@ Now the map view is even more cluttered. Let's fix this by setting scale depende
 
 ![](img/exercise_4/image19.png)
 
-## Advanced labelling
 
-You can also try the more advanced label settings on the **berlin_placenames** layer. You can configure your label texts based on expressions with QGIS' **Expression Dialog** tool. You can access the tool pressing the button next to the **Value** drop-down menu:
-
-![](img/exercise_4/image20.png)
-
-Let's form labels that combine information from multiple fields. Open the **Expression Dialog** with the button shown above. The **Expression Dialog** tool opens.
-
-![](img/exercise_4/image21.png)
-
-**Expressions** are a powerful tool in QGIS and they can, in addition to labelling, be used for many other purposes as well. Currently the **Expression** field contains the **name** field because we chose the **name** field earlier in the **Value** drop-down menu. In our data there is also a field called **fclass** that contains information about the type of place. Let's form an expression that combines the place name and type.
-
-Type the following expression into the **Expression** field:
-
-::: code-box
-“name”  ||  ‘\n’  ||   “fclass”
-:::
-
-In addition to the field names (**name** and **fclass**)the expression contains a line break symbol **'\\n'** and two **\|\|** signs that concatenate character strings into one text.
-
-![](img/exercise_4/image22.png)
-
-::: hint-box
-Psst! You can add symbols to your expressions with the buttons below the expression field. Similarly, you can add fields to your expression by expanding the fields and values list and double-clicking the field names.
-:::
-
-Form the aforementioned expression and press **OK**. Click **Apply** in the **Layer Properties** window and see your new two-part  labels on the map. You may need to zoom in first.

@@ -2,7 +2,7 @@
 
 ## Exercise content
 
-This exercise familiarizes you with visualization techniques for vector and raster data.
+This exercise familiarizes you with visualization techniques for vector data.
 
 ## The goal of the exercise
 
@@ -12,7 +12,6 @@ After this exercise you know how to use basic visualization tools for different 
 
 Open a new QGIS project (Project \> New) and save it as "QGIS-exercise 3". Add the following data to the project:
 
--   **..course_directory/harvard_map_collection/berlin_1920.tif**
 -   **..course_directory/geofabrik/berlin_placenames.shp**
 -   **..course_directory/geofabrik/berlin_roads.shp**
 -   **..course_directory/geofabrik/berlin_water.shp**
@@ -71,26 +70,10 @@ Next we will set a scale limit for the **berlin_placenames** layer. Select the l
 
 Enable your changes by pressing either **Apply** or **OK**. The latter closes the **Properties** window in addition to enabling your changes. Now try zooming the map view and see how the layer vanishes once you zoom out far enough. You can change the scale of the map either by scrolling with the mouse or by typing the desired scale into the scale section of the **Status Bar** at the bottom of the screen.
 
-## Visualizing raster data
-
-Let's start with the **berlin_1920** data set. This raster data is a digitized historical map of Berlin, originally from the year 1920 (digital version published by the Harvard Map Collection, data openly available at: <https://maps.princeton.edu/catalog/harvard-g6299-b3-1920-k5>). The map provides an overview of the city and includes the most important natural and urban elements of the area. The appearance of the map is faithful to old paper maps. To view the layer clearly, hide all other layers in the **Layers Panel**.
-
-![](img/exercise_3/image10.png)
-
-![](img/exercise_3/image11.png)
 
 ::: hint-box
 Psst! Check the coordinate reference system (CRS) from the bottom right of the screen! The CRS of the project should be EPSG:3068. All data in this exercise is already in EPSG:3068, so QGIS has most likely automatically set the correct project CRS.
 :::
 
-Right click the **berlin_1920** layer in the **Layers panel** and select the **Symbology** tab. This tab consists of options that affect the appearance of the selected layer. You can also integrate this panel directly into your QGIS workspace by selecting **View \> Panels \> Layer Styling Panel** or clicking the paint brush symbol ![](img/exercise_3/image12.png) in Layers panel. 
-
-![](img/exercise_3/image13.png)
-
-In the **Band Rendering** section you can select between different **Render types**. The default should be set at **Multibrand color**. This render type uses the three bands of visible light (R = red, G = green, B = blue, RGB) to visualize the raster image. Editing the color values or bands affects how the pixels of the raster image are drawn onto the screen. This particular set of raster data (**berlin_1920**) has been configured in a way that it looks the best when the bands are set as follows: **Red Band = Band 1**, **Green Band = Band 2** and **Blue Band = Band 3**. It is important to grasp the underlying logic to visualizing raster data.
-
-![](img/exercise_3/image14.png)
-
-Now try switching the order of the channels. Pressing **Apply** shows your changes in the map view but leaves the menu open - this way you won't have to close the menu every time you want to check out your results. Once you have experimented enough, click **OK**.
 
  
