@@ -16,15 +16,13 @@
 
 <meta name="author" content="Gispo Ltd." />
 
-<meta name="date" content="2023-03-23" />
+<meta name="date" content="2023-12-11" />
 
 
 <meta name="description" content="5 Exercise 4: Labeling and classifying geographic data | Introduction to QGIS">
 
 <title>5 Exercise 4: Labeling and classifying geographic data | Introduction to QGIS</title>
 
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 
@@ -64,14 +62,14 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <div id="TOC" class="toc">
 <ul>
 <li><a href="index.html#introduction-to-qgis"><span class="toc-section-number">1</span> Introduction to QGIS</a></li>
-<li><a href="01_exercise_1.html#exercise-1-user-interface-of-qgis"><span class="toc-section-number">2</span> Exercise 1: User interface of QGIS</a>
+<li class="has-sub"><a href="01_exercise_1.html#exercise-1-user-interface-of-qgis"><span class="toc-section-number">2</span> Exercise 1: User interface of QGIS</a>
 <ul>
 <li><a href="01_exercise_1.html#downloading-course-materials"><span class="toc-section-number">2.1</span> Downloading course materials</a></li>
 <li><a href="01_exercise_1.html#qgis-user-interface"><span class="toc-section-number">2.2</span> QGIS user interface</a></li>
 <li><a href="01_exercise_1.html#try-the-tools-yourself"><span class="toc-section-number">2.3</span> Try the tools yourself</a></li>
 <li><a href="01_exercise_1.html#attribute-table"><span class="toc-section-number">2.4</span> Attribute table</a></li>
 </ul></li>
-<li><a href="02_exercise_2.html#exercise-2-geographic-data-and-online-data-services"><span class="toc-section-number">3</span> Exercise 2: Geographic data and online data services</a>
+<li class="has-sub"><a href="02_exercise_2.html#exercise-2-geographic-data-and-online-data-services"><span class="toc-section-number">3</span> Exercise 2: Geographic data and online data services</a>
 <ul>
 <li><a href="02_exercise_2.html#exercise-content"><span class="toc-section-number">3.1</span> Exercise content</a></li>
 <li><a href="02_exercise_2.html#the-goal-of-the-exercise"><span class="toc-section-number">3.2</span> The goal of the exercise</a></li>
@@ -80,7 +78,7 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <li><a href="02_exercise_2.html#connecting-to-a-wfs"><span class="toc-section-number">3.5</span> Connecting to a WFS</a></li>
 <li><a href="02_exercise_2.html#bonus-building-sql-query-for-wfs"><span class="toc-section-number">3.6</span> Bonus: Building SQL query for WFS</a></li>
 </ul></li>
-<li><a href="03_exercise_3.html#exercise-3-visualizing-and-classifying-geographic-data-sets"><span class="toc-section-number">4</span> Exercise 3: Visualizing and classifying geographic data sets</a>
+<li class="has-sub"><a href="03_exercise_3.html#exercise-3-visualizing-and-classifying-geographic-data-sets"><span class="toc-section-number">4</span> Exercise 3: Visualizing and classifying geographic data sets</a>
 <ul>
 <li><a href="03_exercise_3.html#exercise-content-1"><span class="toc-section-number">4.1</span> Exercise content</a></li>
 <li><a href="03_exercise_3.html#the-goal-of-the-exercise-1"><span class="toc-section-number">4.2</span> The goal of the exercise</a></li>
@@ -91,9 +89,8 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <li><a href="03_exercise_3.html#visualizing-polygon-data-sets"><span class="toc-section-number">4.7</span> Visualizing polygon data sets</a></li>
 <li><a href="03_exercise_3.html#changing-symbols"><span class="toc-section-number">4.8</span> Changing symbols</a></li>
 <li><a href="03_exercise_3.html#scale-dependent-symbols"><span class="toc-section-number">4.9</span> Scale dependent symbols</a></li>
-<li><a href="03_exercise_3.html#visualizing-raster-data"><span class="toc-section-number">4.10</span> Visualizing raster data</a></li>
 </ul></li>
-<li><a href="04_exercise_4.html#exercise-4-labeling-and-classifying-geographic-data"><span class="toc-section-number">5</span> Exercise 4: Labeling and classifying geographic data</a>
+<li class="has-sub"><a href="04_exercise_4.html#exercise-4-labeling-and-classifying-geographic-data"><span class="toc-section-number">5</span> Exercise 4: Labeling and classifying geographic data</a>
 <ul>
 <li><a href="04_exercise_4.html#exercise-content-2"><span class="toc-section-number">5.1</span> Exercise content</a></li>
 <li><a href="04_exercise_4.html#the-goal-of-the-exercise-2"><span class="toc-section-number">5.2</span> The goal of the exercise</a></li>
@@ -104,9 +101,8 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <li><a href="04_exercise_4.html#classifying-vector-data"><span class="toc-section-number">5.7</span> Classifying vector data</a></li>
 <li><a href="04_exercise_4.html#bonus-classifying-raster-data"><span class="toc-section-number">5.8</span> Bonus: Classifying raster data</a></li>
 <li><a href="04_exercise_4.html#bonus-label-rendering"><span class="toc-section-number">5.9</span> Bonus: Label rendering</a></li>
-<li><a href="04_exercise_4.html#advanced-labelling"><span class="toc-section-number">5.10</span> Advanced labelling</a></li>
 </ul></li>
-<li><a href="05_exercise_5.html#exercise-5-print-layout"><span class="toc-section-number">6</span> Exercise 5: Print layout</a>
+<li class="has-sub"><a href="05_exercise_5.html#exercise-5-print-layout"><span class="toc-section-number">6</span> Exercise 5: Print layout</a>
 <ul>
 <li><a href="05_exercise_5.html#exercise-content-3"><span class="toc-section-number">6.1</span> Exercise content</a></li>
 <li><a href="05_exercise_5.html#the-goal-of-the-exercise-3"><span class="toc-section-number">6.2</span> The goal of the exercise</a></li>
@@ -114,33 +110,32 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <li><a href="05_exercise_5.html#print-layout"><span class="toc-section-number">6.4</span> Print layout</a></li>
 <li><a href="05_exercise_5.html#bonus-map-atlas"><span class="toc-section-number">6.5</span> Bonus: Map atlas</a></li>
 </ul></li>
-<li><a href="06_exercise_6.html#exercise-6-editing-geographic-data-sets"><span class="toc-section-number">7</span> Exercise 6: Editing geographic data sets</a>
+<li class="has-sub"><a href="06_exercise_6.html#exercise-6-editing-geographic-data-sets"><span class="toc-section-number">7</span> Exercise 6: Editing geographic data sets</a>
 <ul>
 <li><a href="06_exercise_6.html#exercise-content-4"><span class="toc-section-number">7.1</span> Exercise content</a></li>
 <li><a href="06_exercise_6.html#the-goal-of-the-exercise-4"><span class="toc-section-number">7.2</span> The goal of the exercise</a></li>
 <li><a href="06_exercise_6.html#preparations-4"><span class="toc-section-number">7.3</span> Preparations</a></li>
 <li><a href="06_exercise_6.html#creating-a-vector-data-set"><span class="toc-section-number">7.4</span> Creating a vector data set</a></li>
-<li><a href="06_exercise_6.html#preparing-the-data-structure-and-the-editing-settings"><span class="toc-section-number">7.5</span> Preparing the data structure and the editing settings</a></li>
-<li><a href="06_exercise_6.html#editing-and-digitizing-vector-data"><span class="toc-section-number">7.6</span> Editing and digitizing vector data</a></li>
-<li><a href="06_exercise_6.html#adding-geometries"><span class="toc-section-number">7.7</span> Adding geometries</a></li>
-<li><a href="06_exercise_6.html#bonus-adding-attribute-information-changethis-cad-digitointi-lisätehtävä"><span class="toc-section-number">7.8</span> Bonus: Adding attribute information CHANGETHIS cad-digitointi lisätehtävä?</a></li>
+<li><a href="06_exercise_6.html#editing-and-digitizing-vector-data"><span class="toc-section-number">7.5</span> Editing and digitizing vector data</a></li>
+<li><a href="06_exercise_6.html#adding-geometries"><span class="toc-section-number">7.6</span> Adding geometries</a></li>
+<li><a href="06_exercise_6.html#bonus-adding-attribute-information"><span class="toc-section-number">7.7</span> Bonus: Adding attribute information</a></li>
 </ul></li>
-<li><a href="07_exercise_7.html#exercise-7-spatial-analyses"><span class="toc-section-number">8</span> Exercise 7: Spatial analyses</a>
+<li class="has-sub"><a href="07_exercise_7.html#exercise-7-spatial-analyses"><span class="toc-section-number">8</span> Exercise 7: Spatial analyses</a>
 <ul>
 <li><a href="07_exercise_7.html#exercise-content-5"><span class="toc-section-number">8.1</span> Exercise content</a></li>
 <li><a href="07_exercise_7.html#the-goal-of-the-exercise-5"><span class="toc-section-number">8.2</span> The goal of the exercise</a></li>
 <li><a href="07_exercise_7.html#preparations-5"><span class="toc-section-number">8.3</span> Preparations</a></li>
 <li><a href="07_exercise_7.html#vector-analyses"><span class="toc-section-number">8.4</span> Vector analyses</a></li>
 </ul></li>
-<li><a href="08_exercise_8.html#exercise-8-plugins-in-qgis"><span class="toc-section-number">9</span> Exercise 8: Plugins in QGIS</a>
+<li class="has-sub"><a href="08_exercise_8.html#exercise-8-plugins-in-qgis"><span class="toc-section-number">9</span> Exercise 8: Plugins in QGIS</a>
 <ul>
 <li><a href="08_exercise_8.html#exercise-content-6"><span class="toc-section-number">9.1</span> Exercise content</a></li>
 <li><a href="08_exercise_8.html#the-goal-of-the-exercise-6"><span class="toc-section-number">9.2</span> The goal of the exercise</a></li>
 <li><a href="08_exercise_8.html#preparations-6"><span class="toc-section-number">9.3</span> Preparations</a></li>
 <li><a href="08_exercise_8.html#plugin-management"><span class="toc-section-number">9.4</span> Plugin management</a></li>
 <li><a href="08_exercise_8.html#quickmapservices"><span class="toc-section-number">9.5</span> QuickMapServices</a></li>
-<li><a href="08_exercise_8.html#qgis2threejs"><span class="toc-section-number">9.6</span> Qgis2threejs</a></li>
-<li><a href="08_exercise_8.html#qgis2web"><span class="toc-section-number">9.7</span> Qgis2web</a></li>
+<li><a href="08_exercise_8.html#bonus-qgis2threejs"><span class="toc-section-number">9.6</span> Bonus: Qgis2threejs</a></li>
+<li><a href="08_exercise_8.html#bonus-qgis2web"><span class="toc-section-number">9.7</span> Bonus: Qgis2web</a></li>
 </ul></li>
 </ul>
 </div>
@@ -165,11 +160,10 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <h2><span class="header-section-number">5.3</span> Preparations</h2>
 <p>Open a new QGIS project (Project &gt; New) and save it as “QGIS-exercise 4”. Add the following data to the project:</p>
 <ul>
-<li><p><strong>..course_directory/harvard_map_collection/berlin_1920.tif</strong></p></li>
 <li><p><strong>..course_directory/geofabrik/berlin_placenames.shp</strong></p></li>
 <li><p><strong>..course_directory/geofabrik/berlin_roads.shp</strong></p></li>
 <li><p><strong>..course_directory/geofabrik/berlin_water.shp</strong></p></li>
-<li><p><strong>..course_directory/kontur/population_crete.gpkg</strong></p></li>
+<li><p><strong>..course_directory/kontur/population_ny.gpkg</strong></p></li>
 <li><p><strong>..course_directory/copernicus/DEM_greece.tif</strong></p></li>
 </ul>
 <p>In QGIS, it is possible to add labels to your map features. Open the <strong>Properties</strong> of the layer <strong>berlin_placenames</strong>. Choose <strong>Single Labels</strong> and from the drop-down menu below select the field that contains the name information (<strong>name</strong>).Press <strong>Apply</strong> and the labels appear in the map view.</p>
@@ -236,21 +230,23 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div id="classifying-vector-data" class="section level2" number="5.7">
 <h2><span class="header-section-number">5.7</span> Classifying vector data</h2>
-<p>Let's first focus on the <strong>population_crete</strong> data set, so hide all other layers. The <strong>population_crete</strong> data set haspopulation data aggregated to a hexagonal grid in <strong>GeoPackage</strong> format. Take a look at the attribute table of the data (<strong>Right-click</strong> the layer in the <strong>Layers Panel</strong> andselect <strong>Open Attribute Table</strong>). QGIS opens an attribute table window that showcases the attributes of the layer features. The attribute table is an essential part of any vector data set and all vector data sets have one.</p>
+<p>Let’s first focus on the <strong>population_ny</strong> data set, so hide all other layers. The <strong>population_ny</strong> data set has population data aggregated to a hexagonal grid in <strong>GeoPackage</strong> format. If the hexagons in your map look a little askew, change the project coordinate system to EPSG:3857 by clicking <img src="img/exercise_4/image23.png" /> at the bottom right corner. In the <strong>Filter</strong> bar search for <strong>3857</strong> (WGS85 / Pseudo-Mercator). Click on the correct coordinate system and click <strong>OK</strong> from the bottom of the window. QGIS might ask for transformation for other layers open, select the most accurate and click <strong>OK</strong>.</p>
+<p><img src="img/exercise_4/image24.png" style="width:70.0%" /></p>
+<p>Take a look at the attribute table of the data (<strong>Right-click</strong> the layer in the <strong>Layers Panel</strong> andselect <strong>Open Attribute Table</strong>). QGIS opens an attribute table window that showcases the attributes of the layer features. The attribute table is an essential part of any vector data set and all vector data sets have one.</p>
 <p><img src="img/exercise_4/image6.png" /></p>
-<p>Taking a look at the attribute table is necessary to understand the data. Another important resource is the <strong>metadata</strong> of the data set. Metadatais often found on the data provider's web pages or on other interfaces meant for discovering geographic data sets. Metadata usually tells us for example who the data producer is, for what purpose the data is, in what scale the data is, and what the native coordinate reference system of the data is.</p>
-<p>The <strong>population_crete</strong> data set is actually only a small portion of a global population dataset produced by Kontur. You can find the metadata of the data here: <a href="https://data.humdata.org/dataset/kontur-population-dataset" class="uri">https://data.humdata.org/dataset/kontur-population-dataset</a>. Open the link, select the metadata tab and see how the data set has been made (read the methodology section).</p>
+<p>Taking a look at the attribute table is necessary to understand the data. Another important resource is the <strong>metadata</strong> of the data set. Metadata is often found on the data provider’s web pages or on other interfaces meant for discovering geographic data sets. Metadata usually tells us for example who the data producer is, for what purpose the data is, in what scale the data is, and what the native coordinate reference system of the data is.</p>
+<p>The <strong>population_ny</strong> data set is actually only a small portion of a global population dataset produced by Kontur. You can find the metadata of the data here: <a href="https://data.humdata.org/dataset/kontur-population-dataset" class="uri">https://data.humdata.org/dataset/kontur-population-dataset</a>. Open the link, select the metadata tab and see how the data set has been made (read the methodology section).</p>
 <p>With the metadata we now know that the population values in the data are based on multiple data sources, and, while proven to be accurate, they still are only estimations. We also know that the estimation is from the year 2020. All this is important information to know. It is also common that the field names in an attribute table are not self-explanatory (abbreviations or codes) and thus the contents of the fields could be hard to understand with the attribute table alone. Metadata helps in this regard too as most data sets with multiple field names have the field names explained in the metadata.</p>
-<p>It is vital to understand your data before you start working with it. Now that we do, we can for example decide that we want to produce a thematic map that showcases the population distribution of the island of Crete. With a thematic map the data is much clearer to interpret and we can more easily choose appropriate settings for the visualization. Let's start the process of creating a thematic map by opening the <strong>Layer Properties</strong> and setting the layer's <strong>Symbology</strong> to <strong>Graduated</strong>. In the <strong>Value</strong> drop-down menu, select which field you want to base your classification on (<strong>population</strong> in this case). Also set the <strong>Color ramp</strong>, <strong>Mode</strong> andthe number of <strong>Classes</strong> as shown below:</p>
+<p>It is vital to understand your data before you start working with it. Now that we do, we can for example decide that we want to produce a thematic map that showcases the population distribution of New York. With a thematic map the data is much clearer to interpret and we can more easily choose appropriate settings for the visualization. Let’s start the process of creating a thematic map by opening the <strong>Layer Properties</strong> and setting the layer’s <strong>Symbology</strong> to <strong>Graduated</strong>. In the <strong>Value</strong> drop-down menu, select which field you want to base your classification on (<strong>population</strong> in this case). Also set the <strong>Color ramp</strong>, <strong>Mode</strong> andthe number of <strong>Classes</strong> as shown below:</p>
 <p><img src="img/exercise_4/image7.png" /></p>
-<p>Press <strong>Classify</strong> once you have set the aforementioned settings. Now the classes show up in the classes section. You can manually edit the value breaks of the classes by double-clicking the contents of the <strong>Values</strong> column or the class names by double-clicking the contents of the <strong>Legend</strong> column. The legend names of the classes are visible in the <strong>Layers Panel</strong> and in the legendof a print layout. Press <strong>Apply</strong> to see the changes on the map. A thematic map should appear in the map view:</p>
+<p>Press <strong>Classify</strong> once you have set the aforementioned settings. Now the classes show up in the classes section. You can manually edit the value breaks of the classes by double-clicking the contents of the <strong>Values</strong> column or the class names by double-clicking the contents of the <strong>Legend</strong> column. The legend names of the classes are visible in the <strong>Layers Panel</strong> and in the legend of a print layout. Press <strong>Apply</strong> to see the changes on the map. A thematic map should appear in the map view:</p>
 <p><img src="img/exercise_4/image8.png" /></p>
 <p><img src="img/exercise_4/image9.png" /></p>
 <p>If the classes are not visible in your <strong>Layers Panel</strong>,press the small arrow on the left side of the layer name and the class names should appear below the layer as shown above. Now go back to the <strong>Symbology</strong> settings and try <strong>Mode &gt; Equal Interval</strong>. You can delete the existing classes by pressing <strong>Delete All</strong> and then create new ones by pressing <strong>Classify</strong>. Try also changing the number of classes, the classification modes and the colors until you find a setup that you think is appropriate. You can compare different classification modes and the distribution of your data with the <strong>Histogram</strong>. The histogram has its own tab which is located right next to the classes tab. Press <strong>Load values</strong> to see your data and value breaks in the histogram.</p>
 <p><img src="img/exercise_4/image10.png" /></p>
 <p>We can also customize the symbol style. Open the <strong>Properties</strong> of the layer andclick the color bar of the <strong>Symbol</strong> section as shown below:</p>
 <p><img src="img/exercise_4/image11.png" /></p>
-<p>The <strong>Symbol Settings</strong> window opens. Select the <strong>Simple fill</strong> symbol layerand either set the <strong>Stroke color</strong> to transparent or <strong>Stroke style</strong> to <strong>No pen</strong>. Press <strong>OK</strong> and <strong>OK</strong>. Zoom around the map to see the results and return to the symbology settings if you want to make more changes.</p>
+<p>The <strong>Symbol Settings</strong> window opens. Select the <strong>Simple fill</strong> symbol layerand either set the <strong>Stroke color</strong> to transparent or <strong>Stroke style</strong> to <strong>No line</strong>. Press <strong>OK</strong> and <strong>OK</strong>. Zoom around the map to see the results and return to the symbology settings if you want to make more changes.</p>
 <p><img src="img/exercise_4/image12.png" /></p>
 <div class="hint-box">
 <p><strong>Psst! Always save your project file at the end of the exercise.</strong></p>
@@ -258,43 +254,24 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </div>
 <div id="bonus-classifying-raster-data" class="section level2" number="5.8">
 <h2><span class="header-section-number">5.8</span> Bonus: Classifying raster data</h2>
-<p>Set the <strong>DEM_greece</strong> raster visible and hide all other layers. <strong>DEM_greece</strong> is a part of a europe-wide digital elevation model (DEM) and it is produced by Copernicus (more info: <a href="https://land.copernicus.eu/imagery-in-situ/eu-dem" class="uri">https://land.copernicus.eu/imagery-in-situ/eu-dem</a>). As the name suggests, this particular data set covers mostly Greece. If the data opens up in an unknown coordinate reference system (CRS), set the layer's CRS to <strong>EPSG:3035</strong>. Remember to also check that the project CRS is EPSG:3035. By default the elevation model will look like this:</p>
+<p>Set the <strong>DEM_greece</strong> raster visible and hide all other layers. <strong>DEM_greece</strong> is a part of a europe-wide digital elevation model (DEM) and it is produced by Copernicus (more info: <a href="https://land.copernicus.eu/imagery-in-situ/eu-dem" class="uri">https://land.copernicus.eu/imagery-in-situ/eu-dem</a>). As the name suggests, this particular data set covers mostly Greece. If the data opens up in an unknown coordinate reference system (CRS), set the layer’s CRS to <strong>EPSG:3035</strong>. Remember to also check that the project CRS is EPSG:3035. By default the elevation model will look like this:</p>
 <p><img src="img/exercise_4/image13.png" /></p>
 <p>Notice that QGIS detected that the data contains continuous values and visualized them with a single gray band. Already with the default style you can perceive the relief of the area. You can even see some lower islands between Greece and Turkey (area framed with red):</p>
 <p><img src="img/exercise_4/image14.png" /></p>
-<p>Open the layer's <strong>Symbology</strong> settings and notice that the menu looks different from the symbology settings of a vector layer. Try switching the singleband grey to <strong>Singleband pseudocolor</strong>. You can also experiment with the hillshade effect.</p>
+<p>Open the layer’s <strong>Symbology</strong> settings and notice that the menu looks different from the symbology settings of a vector layer. Try switching the singleband grey to <strong>Singleband pseudocolor</strong>. You can also experiment with the hillshade effect.</p>
 <p><img src="img/exercise_4/image15.png" /></p>
 <p>Now zoom into the archipelago that was earlier indicated by the red rectangle. Notice that while you definitely can see the islands, it would be quite hard to confidently tell which one of them is the highest or what kind of relief they have, for example.</p>
-<p>Let's reclassify the data in a way that we get a more detailed view of the islands specifically. Set the scale to 1:500 000 (In the bottom bar of QGIS) and center the map onto the islands in the red rectangle. In the <strong>Symbology</strong> settings, open the <strong>Min/Max Value Settings</strong> and edit the settings so that the visualization uses the <strong>Min/Max values</strong> and <strong>Statistics Extent</strong> is set to <strong>Current canvas</strong>. See the example settings below:</p>
+<p>Let’s reclassify the data in a way that we get a more detailed view of the islands specifically. Set the scale to 1:500 000 (In the bottom bar of QGIS) and center the map onto the islands in the red rectangle. In the <strong>Symbology</strong> settings, open the <strong>Min/Max Value Settings</strong> and edit the settings so that the visualization uses the <strong>Min/Max values</strong> and <strong>Statistics Extent</strong> is set to <strong>Current canvas</strong>. See the example settings below:</p>
 <p><img src="img/exercise_4/image16.png" /></p>
 <p>Then press <strong>Apply</strong>, <strong>classify</strong> the values again and finally press <strong>OK</strong>.</p>
 <p><img src="img/exercise_4/image17.png" /></p>
 <p>On the left picture the archipelago is visualized with just pseudocolours and no reclassification. On the right the same area is visualized after being reclassified so that only the elevation values within the current map view are taken into account. You can also test different classification modes and zoom levels to see how they affect the view. For example, try viewing the entire data with the <strong>Quantile</strong> mode - it shows the relief and especially the shorelines even more distinctively.</p>
-<p>Once you are done, save the project file into the course directory either by selecting <strong>Project &gt; Save</strong> from the menu bar or by pressing <strong>CTRL + S</strong>.</p>
 </div>
 <div id="bonus-label-rendering" class="section level2" number="5.9">
 <h2><span class="header-section-number">5.9</span> Bonus: Label rendering</h2>
 <p>Zoom the map view so that you can see the whole data set by clicking <strong>Zoom Full</strong> <img src="img/exercise_4/image18.png" />. Wait for the labels to appear and notice how there are way too many of them on the map. Now, open the <strong>Properties</strong> of <strong>berlin_placenames</strong> and choose <strong>Labels</strong> from the side bar. Select the <strong>Rendering</strong> tab, checkthe <strong>Show all layers for this layer (including colliding labels)</strong> box and press <strong>Apply</strong>. Wait for the labels to appear. Notice that by default QGIS does not draw labels that would collide.</p>
 <p>Now the map view is even more cluttered. Let’s fix this by setting scale dependent visibility to our labels. Start with the <strong>berlin_placenames</strong> layer. Enable <strong>Scale dependent visibility</strong> in the <strong>Rendering</strong> tab and set the <strong>minimum</strong> to 1:100 000. Press <strong>OK</strong>. The place name labels are now visible only when the map is zoomed closer than 1:100 000 scale. Do the same to the labels of the <strong>berlin_roads</strong> layer, but set the minimum scale to 1:30 000.</p>
 <p><img src="img/exercise_4/image19.png" /></p>
-</div>
-<div id="advanced-labelling" class="section level2" number="5.10">
-<h2><span class="header-section-number">5.10</span> Advanced labelling</h2>
-<p>You can also try the more advanced label settings on the <strong>berlin_placenames</strong> layer. You can configure your label texts based on expressions with QGIS’ <strong>Expression Dialog</strong> tool. You can access the tool pressing the button next to the <strong>Value</strong> drop-down menu:</p>
-<p><img src="img/exercise_4/image20.png" /></p>
-<p>Let’s form labels that combine information from multiple fields. Open the <strong>Expression Dialog</strong> with the button shown above. The <strong>Expression Dialog</strong> tool opens.</p>
-<p><img src="img/exercise_4/image21.png" /></p>
-<p><strong>Expressions</strong> are a powerful tool in QGIS and they can, in addition to labelling, be used for many other purposes as well. Currently the <strong>Expression</strong> field contains the <strong>name</strong> field because we chose the <strong>name</strong> field earlier in the <strong>Value</strong> drop-down menu. In our data there is also a field called <strong>fclass</strong> that contains information about the type of place. Let’s form an expression that combines the place name and type.</p>
-<p>Type the following expression into the <strong>Expression</strong> field:</p>
-<div class="code-box">
-<p>“name” || ‘’ || “fclass”</p>
-</div>
-<p>In addition to the field names (<strong>name</strong> and <strong>fclass</strong>)the expression contains a line break symbol <strong>‘\n’</strong> and two <strong>||</strong> signs that concatenate character strings into one text.</p>
-<p><img src="img/exercise_4/image22.png" /></p>
-<div class="hint-box">
-<p>Psst! You can add symbols to your expressions with the buttons below the expression field. Similarly, you can add fields to your expression by expanding the fields and values list and double-clicking the field names.</p>
-</div>
-<p>Form the aforementioned expression and press <strong>OK</strong>. Click <strong>Apply</strong> in the <strong>Layer Properties</strong> window and see your new two-part  labels on the map. You may need to zoom in first.</p>
 
 </div>
 </div>
@@ -311,7 +288,7 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 
 <div class="footer-info">
 <h5 class="footer-title">Introduction to QGIS</h5>
-<span class="footer-version">v2023-03-23</span>
+<span class="footer-version">v2023-12-11</span>
 <div class="license"><img src="img/by-nd.svg" width="80px" alt="CC-BY-ND"></div>
 </div>
 

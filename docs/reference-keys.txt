@@ -27,7 +27,6 @@ visualizing-point-data-sets
 visualizing-polygon-data-sets
 changing-symbols
 scale-dependent-symbols
-visualizing-raster-data
 exercise-4-labeling-and-classifying-geographic-data
 exercise-content-2
 the-goal-of-the-exercise-2
@@ -38,7 +37,6 @@ labeling-line-layers
 classifying-vector-data
 bonus-classifying-raster-data
 bonus-label-rendering
-advanced-labelling
 exercise-5-print-layout
 exercise-content-3
 the-goal-of-the-exercise-3
@@ -50,10 +48,9 @@ exercise-content-4
 the-goal-of-the-exercise-4
 preparations-4
 creating-a-vector-data-set
-preparing-the-data-structure-and-the-editing-settings
 editing-and-digitizing-vector-data
 adding-geometries
-bonus-adding-attribute-information-changethis-cad-digitointi-lisätehtävä
+bonus-adding-attribute-information
 exercise-7-spatial-analyses
 exercise-content-5
 the-goal-of-the-exercise-5
@@ -65,5 +62,5 @@ the-goal-of-the-exercise-6
 preparations-6
 plugin-management
 quickmapservices
-qgis2threejs
-qgis2web
+bonus-qgis2threejs
+bonus-qgis2web
